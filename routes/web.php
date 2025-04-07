@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hellow',function (){
+    return View('hellow');
+});
+
+
+// Route::get('/salam',function (){
+//     return'salam alikom';
+// });
