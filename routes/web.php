@@ -21,7 +21,3 @@ Route::get('/hellow',function (){
     return View('hellow');
 });
 
-
-// Route::get('/salam',function (){
-//     return'salam alikom';
-// });
