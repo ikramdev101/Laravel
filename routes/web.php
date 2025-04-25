@@ -21,7 +21,22 @@ Route::get('/hellow',function (){
     return View('hellow');
 });
 
+Route:: get ('users/{id}',function ($id){
+    if($id == 'ekram'){
+return 'hellow admin ekram';
+    } 
+    else{
+        return 'heelow  user '.$id;
+    }
+});
+// use Illuminate\Http\Request;
+
+// Route::post('/users', function(Request $Request){
+//     return response()->json($Request->all());
+// });
 
 // Route::get('/salam',function (){
 //     return'salam alikom';
 // });
+
+
