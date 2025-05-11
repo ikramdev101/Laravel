@@ -37,12 +37,7 @@ Route::post('/users', function(Request $Request){
     return response()->json($Request->all());
 });
 
-// Route::get('/salam',function (){
-//     return'salam alikom';
-// });
 
-
-//get
 Route::get ('/user',function(){
     return view('user',[
         'users'=>[
@@ -53,4 +48,7 @@ Route::get ('/user',function(){
         ]
         
     ]);
+});
+Route::get('/home',function(){
+    return view('homepage');
 });
