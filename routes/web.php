@@ -43,7 +43,14 @@ Route::post('/users', function(Request $Request){
 
 
 //get
-Route::get('/salamat/{name}',function($name){
-return(
-    'salam alikom '.$name );
+Route::get ('/user',function(){
+    return view('user',[
+        'users'=>[
+        'developer ' => 'ekrram',
+        'designer' => 'sami',
+        'manager' => 'reda',
+        'admin'=> 'ismail',
+        ]
+        
+    ]);
 });
