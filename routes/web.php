@@ -42,3 +42,8 @@ Route::post('/users', function(Request $Request){
 // });
 
 
+//get
+Route::get('/salamat/{name}',function($name){
+return(
+    'salam alikom '.$name );
+});
